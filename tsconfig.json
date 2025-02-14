@@ -7,7 +7,6 @@
     "isolatedModules": true,
     "types": [
       "file-saver",
-      "jquery",
       "vite/client",
     ],
     "noEmit": true,

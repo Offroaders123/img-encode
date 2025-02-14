@@ -1,4 +1,4 @@
-import "./jquery.min.js";
+import $ from "jquery";
 import { BeerSlider } from "./beerslider/beerslider.js";
 import { loadCanvas, showLoading, getImageData, loadCanvasFromExampleFiles } from "./engine.js";
 

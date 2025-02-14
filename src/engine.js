@@ -1,3 +1,4 @@
+import $ from "jquery"
 import { RIFFWAVE } from "./riffwave.js"
 import { saveAs } from "./FileSave.js"
 
