@@ -7,25 +7,25 @@ Convert an image to sound spectrogram
 
 https://alexadam.github.io/demos/img-encode/index.html
 
-![alt result](./ui.jpg?raw=true "ui.jpg")
+![alt result](./demos/ui.jpg?raw=true "ui.jpg")
 
 ---
 
  Open the generated 'result.wav' file with 'Sonic Visualizer', click on 'Layer -> add Spectrogram'. The result:
 
-![alt result](./spec6.png?raw=true "spec6.png")
+![alt result](./demos/spec6.png?raw=true "spec6.png")
 
 ## Other examples
 
-![alt result](./spec1.png?raw=true "spec1.png")
+![alt result](./demos/spec1.png?raw=true "spec1.png")
 
-![alt result](./spec2.png?raw=true "spec2.png")
+![alt result](./demos/spec2.png?raw=true "spec2.png")
 
-![alt result](./spec3.png?raw=true "spec3.png")
+![alt result](./demos/spec3.png?raw=true "spec3.png")
 
-![alt result](./spec4.png?raw=true "spec4.png")
+![alt result](./demos/spec4.png?raw=true "spec4.png")
 
-![alt result](./spec5.png?raw=true "spec5.png")
+![alt result](./demos/spec5.png?raw=true "spec5.png")
 
 
 ## Credits
