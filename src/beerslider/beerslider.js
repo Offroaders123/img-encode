@@ -1,3 +1,5 @@
+// @ts-nocheck
+
  class BeerSlider {
 
     constructor (element, {start = '50', prefix = 'beer'} = {}) {

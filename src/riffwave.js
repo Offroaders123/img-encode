@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 /* 
  * RIFFWAVE.js v0.03 - Audio encoder for HTML5 <audio> elements.
  * Copyleft 2011 by Pedro Ladaria <pedro.ladaria at Gmail dot com>

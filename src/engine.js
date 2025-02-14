@@ -4,6 +4,7 @@ var audio = new Audio()
 
 var width = 800
 var height = 600
+/** @type {HTMLCanvasElement} */
 var canvas = document.getElementById("spectrum-canvas")
 var ctx = canvas.getContext('2d')
 var animationFunc
@@ -31,13 +32,14 @@ function hideLoading() {
 
 function loadCanvas(imagePath) {
     let reader = new FileReader()
+    /** @type {HTMLCanvasElement} */
     let c = document.getElementById('canvas')
     let ctx = c.getContext("2d")
     let img = new Image()
 
     reader.readAsDataURL(imagePath)
     reader.onload = function (_file) {
-        img.src = _file.target.result
+        img.src = /** @type {string} */ (_file.target.result)
         img.onload = function () {
             c.width = img.width
             c.height = img.height
@@ -51,6 +53,7 @@ function loadCanvas(imagePath) {
 }
 
 function loadCanvasFromExampleFiles(imagePath) {
+    /** @type {HTMLCanvasElement} */
     let c = document.getElementById('canvas')
     let ctx = c.getContext("2d")
     let img = new Image()
@@ -68,13 +71,14 @@ function loadCanvasFromExampleFiles(imagePath) {
 }
 
 function getImageData() {
+    /** @type {HTMLCanvasElement} */
     let srcCanvas1 = document.getElementById("canvas")
     let srcCtx1 = srcCanvas1.getContext("2d")
     let srcImgData1 = srcCtx1.getImageData(0, 0, srcCanvas1.width, srcCanvas1.height)
     let height = srcImgData1.height
     let width = srcImgData1.width
 
-    let durationSeconds = parseFloat($('#lengthInSeconds').val())
+    let durationSeconds = parseFloat(/** @type {string} */($('#lengthInSeconds').val()))
     let tmpData = []
     let maxFreq = 0
     let data = []

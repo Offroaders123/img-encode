@@ -16,7 +16,7 @@ $(document).ready(() => {
 
         $('#lengthInSeconds').val('3')
 
-        loadCanvas($('#fileBrowser')[0].files[0])
+        loadCanvas(/** @type {HTMLInputElement} */ ($('#fileBrowser')[0]).files[0])
         $("#settings").removeClass('invisible')
         window.scrollTo(0, 300 + window.scrollY)
     });
@@ -70,7 +70,7 @@ $(document).ready(() => {
     function playFlow() {
         $('#play-icon').addClass('invisible')
         $('#playButton').addClass('invisible')
-        document.getElementById('audioPlayer').play()
+        ;/** @type {HTMLAudioElement} */ (document.getElementById('audioPlayer')).play()
     }
 
     function resetPlayFlow() {

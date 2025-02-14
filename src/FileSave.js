@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 /* FileSaver.js
  * A saveAs() FileSaver implementation.
  * 2014-11-29

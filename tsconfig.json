@@ -1,20 +1,24 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "module": "None",
     "target": "ESNext",
     "isolatedModules": true,
     "types": [
-      "vite/client"
+      "file-saver",
+      "jquery",
+      "vite/client",
     ],
     "noEmit": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "allowUnreachableCode": false,
-    "noUnusedLocals": true,
-    "allowUnusedLabels": false,
-    "noUnusedParameters": true
+    // "skipLibCheck": true,
+    // "strict": true,
+    // "noImplicitOverride": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // "noUncheckedIndexedAccess": true,
+    // "allowUnreachableCode": false,
+    // "noUnusedLocals": true,
+    // "allowUnusedLabels": false,
+    // "noUnusedParameters": true
   }
 }
