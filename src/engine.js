@@ -1,6 +1,6 @@
 import $ from "jquery"
 import { RIFFWAVE } from "./riffwave.js"
-import { saveAs } from "./FileSave.js"
+import { saveAs } from "file-saver"
 
 var AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext
 var audioContext = audioContext || new AudioContext()
