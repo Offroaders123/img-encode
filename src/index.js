@@ -1,3 +1,7 @@
+import "./jquery.min.js";
+import { BeerSlider } from "./beerslider/beerslider.js";
+import { loadCanvas, showLoading, getImageData, loadCanvasFromExampleFiles } from "./engine.js";
+
 new BeerSlider(document.getElementById('slider'), {
     start: '50',
     prefix: 'beer'

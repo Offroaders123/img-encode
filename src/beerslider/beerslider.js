@@ -1,6 +1,6 @@
 // @ts-nocheck
 
- class BeerSlider {
+export class BeerSlider {
 
     constructor (element, {start = '50', prefix = 'beer'} = {}) {
         this.start = parseInt(start) ? Math.min(100, Math.max(0, parseInt(start))) : 50

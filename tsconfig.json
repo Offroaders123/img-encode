@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "module": "None",
+    "module": "NodeNext",
     "target": "ESNext",
     "isolatedModules": true,
     "types": [
@@ -11,14 +11,14 @@
       "vite/client",
     ],
     "noEmit": true,
-    // "skipLibCheck": true,
+    "skipLibCheck": true,
     // "strict": true,
     // "noImplicitOverride": true,
     // "noPropertyAccessFromIndexSignature": true,
     // "noUncheckedIndexedAccess": true,
-    // "allowUnreachableCode": false,
-    // "noUnusedLocals": true,
-    // "allowUnusedLabels": false,
-    // "noUnusedParameters": true
+    "allowUnreachableCode": false,
+    "noUnusedLocals": true,
+    "allowUnusedLabels": false,
+    "noUnusedParameters": true
   }
 }

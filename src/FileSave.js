@@ -14,7 +14,7 @@
 
 /*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
 
-var saveAs = saveAs
+export var saveAs = saveAs
   // IE 10+ (native saveAs)
   || (typeof navigator !== "undefined" &&
       navigator.msSaveOrOpenBlob && navigator.msSaveOrOpenBlob.bind(navigator))

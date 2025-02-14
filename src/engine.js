@@ -1,3 +1,6 @@
+import { RIFFWAVE } from "./riffwave.js"
+import { saveAs } from "./FileSave.js"
+
 var AudioContext = window.AudioContext || window.webkitAudioContext || window.mozAudioContext
 var audioContext = audioContext || new AudioContext()
 var audio = new Audio()
@@ -21,7 +24,7 @@ input.connect(audioContext.destination)
 
 
 
-function showLoading() {
+export function showLoading() {
     $('#waitScreen').removeClass('invisible')
 }
 function hideLoading() {
@@ -30,7 +33,7 @@ function hideLoading() {
 
 
 
-function loadCanvas(imagePath) {
+export function loadCanvas(imagePath) {
     let reader = new FileReader()
     /** @type {HTMLCanvasElement} */
     let c = document.getElementById('canvas')
@@ -52,7 +55,7 @@ function loadCanvas(imagePath) {
 
 }
 
-function loadCanvasFromExampleFiles(imagePath) {
+export function loadCanvasFromExampleFiles(imagePath) {
     /** @type {HTMLCanvasElement} */
     let c = document.getElementById('canvas')
     let ctx = c.getContext("2d")
@@ -70,7 +73,7 @@ function loadCanvasFromExampleFiles(imagePath) {
 
 }
 
-function getImageData() {
+export function getImageData() {
     /** @type {HTMLCanvasElement} */
     let srcCanvas1 = document.getElementById("canvas")
     let srcCtx1 = srcCanvas1.getContext("2d")
